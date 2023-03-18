@@ -1,0 +1,93 @@
+body{
+    font-family: 'poppins';
+    background-color: black;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo{
+    width: 65px;
+}
+
+.cabecalho.menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.cabecalho nav li a:hover{
+    background-color: #d5011d;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 138px);
+    padding: 0 30px 30px;
+    flex-direction: column;
+}
+
+.container .mario-logo{
+    max-width: 800px;
+    margin: 50px;
+}
+
+.container figure{
+    display: flex;
+    justify-content: center;
+}
+
+.container figcaption{
+    color: #ffffff;
+}
+
+.fundo-video{
+    background-color:#d5011d;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fundo-video .video{
+    height: 100vh;
+    /* justify-content:center ; */
+}
+
+.fundo-video::after{
+    
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+}
+
+
+/* .cabecalho.menu:hover{
+    color: red;
+} */
