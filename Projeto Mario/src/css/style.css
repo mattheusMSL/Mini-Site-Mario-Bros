@@ -101,6 +101,7 @@ body{
 }
 
 .img-mario{
+    margin: 50px;
     max-width: 500px;
 }
 
@@ -108,10 +109,31 @@ body{
     color: #a8adb7;
     width: 50%;
     font-size: 20px;
-    padding-top: 5.5%;
+    padding-top: 9%;
     text-align: justify;
     line-height: 30px;
 }
+
+.luigi{
+    padding-top: 5.6em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.desc-luigi{
+    color: #a8adb7;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 10%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.img-luigi{
+    max-width: 500px;
+}
+
+
 
 /* .cabecalho.menu:hover{
     color: red;
