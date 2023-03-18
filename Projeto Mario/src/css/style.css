@@ -55,7 +55,13 @@ body{
 }
 
 .container figcaption{
-    color: #ffffff;
+    color: #a8adb7;
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 30px 0;
+    /* margin: 30px 0; */
 }
 
 .fundo-video{
@@ -87,6 +93,25 @@ body{
     background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
 }
 
+.mario{
+    padding-top: 10em;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.img-mario{
+    max-width: 500px;
+}
+
+.desc-mario{
+    color: #a8adb7;
+    width: 50%;
+    font-size: 20px;
+    padding-top: 5.5%;
+    text-align: justify;
+    line-height: 30px;
+}
 
 /* .cabecalho.menu:hover{
     color: red;
