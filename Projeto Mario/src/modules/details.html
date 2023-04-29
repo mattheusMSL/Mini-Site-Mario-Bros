@@ -15,11 +15,13 @@
 </head>
 <body>
 
-    <div class="fundo-video">   
-        <video class="video" autoplay loop muted>
-          <source src="../video/video-mario.mp4" type="video/mp4"> 
-        </video>    
-    </div>
+    <section id="background-video"> 
+        <div class="fundo-video">   
+            <video class="video" autoplay loop muted>
+              <source src="../video/video-mario.mp4" type="video/mp4"> 
+            </video>    
+        </div>
+    </section>
 
     <header class="cabecalho">
        <a href="../../../index.html">
@@ -31,14 +33,15 @@
         </ul>
        </nav>
     </header>
-    <main class="container">
+    <main>
+        <div class="container">
         <div class="filme">
             <figure>
                 <a>
-                    <img src="../imagens/mario-logo.png" alt="Logo Mario" class="mario-logo">
+                    <img src="../imagens/mario-logo.png" alt="Logo Mario" class="mario-logo animated-mario-logo">
                 </a>
             </figure>
-            <figcaption><p> Super Mario Bros. é um filme de aventura e ficção científica lançado em 1993, baseado na série de jogos de videogame da Nintendo, Super Mario Bros. O filme conta a história dos irmãos Mario, Mario e Luigi, que são encanadores em Nova York e acabam sendo transportados para uma dimensão paralela, conhecida como Dinohattan. 
+            <figcaption><p class="animated-caption"> Super Mario Bros. é um filme de aventura e ficção científica lançado em 1993, baseado na série de jogos de videogame da Nintendo, Super Mario Bros. O filme conta a história dos irmãos Mario, Mario e Luigi, que são encanadores em Nova York e acabam sendo transportados para uma dimensão paralela, conhecida como Dinohattan. 
 
             Em Dinohattan, Mario e Luigi se encontram em uma luta contra o malvado Rei Koopa, que planeja usar um artefato místico chamado Meteorite para fundir a dimensão dos humanos com a dimensão dos dinossauros, com o objetivo de dominar o mundo. Mario e Luigi se unem a uma rebelião liderada pela Princesa Daisy para impedir o plano de Koopa e salvar as duas dimensões. 
 
@@ -49,11 +52,11 @@
         <div class="mario">
             <figure >
                 <a>
-                    <img src="../imagens/mario2.png" alt="mario" class="img-mario">
+                    <img src="../imagens/mario2.png" alt="mario" class="img-mario animated-mario">
                 </a>
             </figure>
             <article class="desc-mario">
-               <p>Mario Bros é um personagem de videogame criado pela Nintendo em 1981. Ele é o protagonista de uma série de jogos de plataforma popular, incluindo Super Mario Bros, Mario Kart e Super Mario Odyssey. Mario é conhecido por suas roupas distintas, que consistem em um macacão vermelho, camisa azul e chapéu vermelho com uma letra "M" branca estampada nele. Ele também é conhecido por seu bigode espesso e sapatos marrons.
+               <p class="animated-mario-desc">Mario Bros é um personagem de videogame criado pela Nintendo em 1981. Ele é o protagonista de uma série de jogos de plataforma popular, incluindo Super Mario Bros, Mario Kart e Super Mario Odyssey. Mario é conhecido por suas roupas distintas, que consistem em um macacão vermelho, camisa azul e chapéu vermelho com uma letra "M" branca estampada nele. Ele também é conhecido por seu bigode espesso e sapatos marrons.
 
                Mario é um encanador italiano, que vive em um mundo de fantasia chamado Mushroom Kingdom. Ele é frequentemente chamado para salvar a Princesa Peach das garras do vilão Bowser, e para isso, ele deve percorrer níveis cheios de inimigos e obstáculos, coletando moedas e power-ups ao longo do caminho. Mario é um personagem icônico na cultura pop e é conhecido por sua personalidade otimista e corajosa. Ele é um dos personagens de videogame mais reconhecidos e amados de todos os tempos.
             </p> 
@@ -61,20 +64,21 @@
         </div>
 
         <div class="luigi">
-            <article class="desc-luigi">
+            <article class="desc-luigi animated-luigi-desc">
                 <p>Luigi é um personagem de videogame criado pela Nintendo em 1983. Ele é o irmão mais novo de Mario e co-protagonista de várias séries de jogos, incluindo a série Super Mario Bros e Mario Kart. Luigi é conhecido por sua roupa semelhante à de Mario, mas na cor verde, e é frequentemente visto carregando uma mochila nas costas.
 
                 Embora seja geralmente retratado como um personagem tímido e nervoso em comparação com o irmão mais corajoso e confiante, Luigi tem suas próprias habilidades únicas, incluindo um salto mais alto e uma maior habilidade em saltar sobre obstáculos e inimigos. Luigi também é um personagem popular entre os fãs devido à sua personalidade engraçada e desajeitada, e muitas vezes é retratado em jogos e outras mídias como um alívio cômico.</p>
             </article>
             <figure>
                 <a>
-                    <img src="../imagens/luigi.png" alt="luigi" class="img-luigi">
+                    <img src="../imagens/luigi.png" alt="luigi" class="img-luigi animated-luigi">
                 </a>
             </figure>
         </div>
+    </div>
     </main>
     <footer>
-
     </footer>
+    <script src="Projeto Mario/src/js/script.js"></script>
 </body>
 </html>

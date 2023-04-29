@@ -133,8 +133,81 @@ body{
     max-width: 500px;
 }
 
-
-
 /* .cabecalho.menu:hover{
     color: red;
 } */
+
+.animated-mario{
+    animation: fadeInleft 1.2s both;
+}
+
+@keyframes fadeInleft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animated-mario-desc{
+    animation: fadeInRight 2s both;
+
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+
+.animated-luigi{
+    animation: fadeInRight 1.2s both;
+}
+
+.animated-luigi-desc{
+    animation: fadeInleft 2s both;
+}
+
+.animated-mario-logo{
+    animation: fadeInTop 1.6s both;
+}
+
+@keyframes fadeInTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-caption{
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to   {opacity: 1;}
+    0%{
+        transform: translateZ(100px)
+    }
+
+    100%{
+        transform: translateZ(0);
+    }
+  
+
+}

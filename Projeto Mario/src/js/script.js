@@ -22,3 +22,5 @@ botaoTrailer.addEventListener("click", () => {
  	video.setAttribute("src", "");
  });
  
+
+ const target = document.querySelector(".animated-mario");
