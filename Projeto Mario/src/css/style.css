@@ -113,6 +113,7 @@ body{
     padding-top: 9%;
     text-align: justify;
     line-height: 30px;
+    /* opacity: 0; */
 }
 
 .luigi{
