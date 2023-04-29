@@ -103,6 +103,7 @@ body{
 .img-mario{
     margin: 50px;
     max-width: 500px;
+    opacity: 0;
 }
 
 .desc-mario{
