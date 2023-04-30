@@ -129,10 +129,12 @@ body{
     padding-top: 10%;
     text-align: justify;
     line-height: 30px;
+    opacity: 0;
 }
 
 .img-luigi{
     max-width: 500px;
+    opacity: 0;
 }
 
 /* .cabecalho.menu:hover{
