@@ -40,7 +40,7 @@ const imgLuigi = document.querySelectorAll('.img-luigi');
 window.addEventListener('scroll', animeLuigiScroll);
 
 function animeLuigiScroll(){
-    const trigger = window.innerHeight / 5 * 3;
+    const trigger = window.innerHeight / 5 * 3.8;
     imgLuigi.forEach((element) => {
         const imgLuigiScroll = element.getBoundingClientRect();
         if (imgLuigiScroll.top < trigger){
@@ -55,14 +55,14 @@ function animeLuigiScroll(){
 /*  ------------ imagem luigi ------------  */
 
 
-const descLuigi = document.querySelector('.desc-luigi');
+/*const descLuigi = document.querySelector('.desc-luigi');
 const descAnimation = 'animated-luigi-desc';
 
 function animaDescLuigi(){
   const windowTop = window.pageYOffset + window.innerHeight;
 
   descLuigi.forEach(element => {
-    if (windowTop > element.offsetTop + element.offsetHeight / 2){
+    if (windowTop > element.offsetTop + element.offsetHeight / 10){
       element.classList.add(descAnimation);
     } else {
       element.classList.remove(descAnimation);
@@ -76,53 +76,21 @@ if(descLuigi.length){
   window.addEventListener('scroll', animaDescLuigi);
 }
 
+it's working but not what a wanted at the moment */
+
+const descLuigi = document.querySelectorAll(".desc-luigi");
+window.addEventListener('scroll', () => {
+  const trigger = window.innerHeight / 5 * 4;
+  descLuigi.forEach((element) => {
+    const descluigiScroll = element.getBoundingClientRect().top; 
+    if(descluigiScroll < trigger){
+      element.classList.add('animated-luigi-desc');
+    }else{
+      element.classList.remove('animated-luigi-desc');
+    }
+  });
+});
 
 
+/*  ------------ descrição luigi ------------  */
 
-/*window.addEventListener('scroll', descLuigiScroll);
-
-function descLuigiScroll(){
-  const trigger = window.innerHeight / 5 * 3.5;
-  descLuigi.forEach((element))
-}
-*/
-
-
-
-//  const target = document.querySelector(".img-mario");
-//  const animationClass = 'animated-mario';
-
-//  function animeScroll(){
-// 	 const windowTop = window.innerHeight * 0.75;
-// 	 target.forEach(element => {
-// 		if((windowTop) > element.offsetTop){
-// 			element.classList.add(animationClass);
-// 		}else{
-// 			element.classList.remove(animationClass);
-// 		}
-// 	 });
-//  }
-
-//  animeScroll();
-
-//  if(target.length){
-// 	window.addEventListener('scroll',() =>{
-// 		animeScroll();
-// 	} )
-//  }
-
-
-
-
-
-// const observer = new IntersectionObserver(entries => {
-// 	entries.forEach(entry => {
-// 		if(entry.isIntersecting){
-// 			document.querySelector(".animated-mario")[0].classList.add("")
-// 		}
-// 	})
-
-// })
-
-
-// observer.observe(document.querySelector(".container"))
