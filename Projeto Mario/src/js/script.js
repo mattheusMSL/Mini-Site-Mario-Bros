@@ -9,8 +9,7 @@ function alternarModal(){
 }
 
 botaoTrailer.addEventListener("click", () => {
-
-	console.log("clicou no botão trailer");
+	// console.log("clicou no botão trailer");
 	alternarModal();
 	video.setAttribute("src", linkDoVideo);
 	// modal.classList.add("aberto");

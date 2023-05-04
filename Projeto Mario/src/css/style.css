@@ -145,7 +145,7 @@ body{
 
 .img-peach{
     max-width: 450px;
-     /* opacity: 0; */
+    opacity: 0;
 }
 
 .desc-peach{
@@ -155,36 +155,49 @@ body{
     padding-top: 10%;
     text-align: justify;
     line-height: 30px;
-    /* opacity: 0; */
+    opacity: 0;
 }
+
 .toad{
-    margin-top: 5.6em;
-    display: flex;
-    justify-content: space-around;
+    margin-top: 5.6rem;
+    /* display: flex; */
+    /* justify-content: ; */
 }
 
 .desc-toad{
     color: #a8adb7;
     width: 50%;
     font-size: 20px;
-    padding-top: 10%;
+    padding-top: 3rem;
     text-align: justify;
     line-height: 30px;
+    opacity: 0;
 }
 
 .img-toad{
+    /* margin: 6rem; */
     max-width: 350px;
+    opacity: 0;
 }
 
 /* .cabecalho.menu:hover{
     color: red;
 } */
 
-.animated-mario{
-    animation: fadeInleft 1.2s both;
+
+.animated-peach{
+    animation: fadeInLeft 1.2s both;
 }
 
-@keyframes fadeInleft{
+.animated-desc-peach{
+    animation: fadeInRight 1.2s both;
+}
+
+.animated-mario{
+    animation: fadeInLeft 1.2s both;
+}
+
+@keyframes fadeInLeft{
     0%{
         opacity: 0;
         transform: translateX(-100px);
@@ -218,7 +231,7 @@ body{
 }
 
 .animated-luigi-desc{
-    animation: fadeInleft 2s both;
+    animation: fadeInLeft 2s both;
 }
 
 .animated-mario-logo{
@@ -238,19 +251,38 @@ body{
 }
 
 .animated-caption{
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 2s both;
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to   {opacity: 1;}
     0%{
+        opacity: 0;
         transform: translateZ(100px)
     }
 
     100%{
+        opacity: 1;
         transform: translateZ(0);
     }
   
+}
 
+.animated-toad{
+    animation: fadeInBotton 2s both;
+}
+
+.animated-desc-toad{
+    animation: fadeIn 4s both;
+}
+
+@keyframes fadeInBotton{
+    0%{
+        opacity: 0;
+        transform: translateY(6rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

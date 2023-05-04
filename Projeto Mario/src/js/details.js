@@ -15,7 +15,7 @@ function animaScrollMario(){
 });
 }
 
-/*  ------------ imagem do mario ------------  */ 
+/*  ------------ Mario's Image ------------  */ 
 
 const descMario = document.querySelectorAll('.animated-mario-desc');
 
@@ -33,7 +33,7 @@ function animaScrollDescMario(){
   });
 }
 
-/*  ------------ descrição do mario ------------  */ 
+/*  ------------  Mario's Description ------------  */ 
 
 const imgLuigi = document.querySelectorAll('.img-luigi');
 
@@ -52,7 +52,7 @@ function animeLuigiScroll(){
 }
 
 
-/*  ------------ imagem luigi ------------  */
+/*  ------------ Luigi's Image------------  */
 
 
 /*const descLuigi = document.querySelector('.desc-luigi');
@@ -80,7 +80,7 @@ it's working but not what a wanted at the moment */
 
 const descLuigi = document.querySelectorAll(".desc-luigi");
 window.addEventListener('scroll', () => {
-  const trigger = window.innerHeight / 5 * 4;
+  const trigger = window.innerHeight / 5 * 5;
   descLuigi.forEach((element) => {
     const descluigiScroll = element.getBoundingClientRect().top; 
     if(descluigiScroll < trigger){
@@ -92,5 +92,67 @@ window.addEventListener('scroll', () => {
 });
 
 
-/*  ------------ descrição luigi ------------  */
+/*  ------------ Luigi's Description  ------------  */
+
+
+const imgPeach = document.querySelectorAll(".img-peach");
+window.addEventListener('scroll', () =>{
+  const trigger = window.innerHeight / 5 * 4;
+  imgPeach.forEach((element) => {
+    const imgPeachScroll = element.getBoundingClientRect().top;
+    if(imgPeachScroll < trigger){
+      element.classList.add("animated-peach");
+    }else{
+      element.classList.remove("animated-peach");
+    }
+  });
+});
+
+/*  ------------ Princess Peach's Image   ------------  */
+
+const descPeach = document.querySelectorAll(".desc-peach");
+window.addEventListener('scroll', () => {
+  const trigger = window.innerHeight / 5 * 5;
+  descPeach.forEach((element) => {
+    const descPeachScroll = element.getBoundingClientRect().top;
+    if(descPeachScroll < trigger){
+      element.classList.add('animated-desc-peach');
+    }else{
+      element.classList.remove('animated-desc-peach');
+    }
+  });
+});
+
+/*  ------------ Princess Peach's Description ------------  */
+
+const imgToad = document.querySelectorAll('.img-toad');
+window.addEventListener('scroll', () =>{
+  const trigger = window.innerHeight / 5 * 5;
+  imgToad.forEach((element) => {
+    const imgToadScroll = element.getBoundingClientRect().top;
+    if(imgToadScroll < trigger){
+      element.classList.add('animated-toad');
+    }else{
+      element.classList.remove('animated-toad');
+    }
+  });
+});
+
+/*  ------------ Toad's image ------------  */
+
+
+const descToad = document.querySelectorAll('.desc-toad');
+window.addEventListener('scroll', () => {
+  const trigger = window.innerHeight / 5 * 6;
+  descToad.forEach((element) => {
+    const descToadScroll = element.getBoundingClientRect().top;
+    if(descToadScroll < trigger){
+      element.classList.add('animated-desc-toad');
+    }else{
+      element.classList.remove('animated-desc-toad');
+    }
+  });
+});
+
+/*  ------------ Toad's description ------------  */
 
