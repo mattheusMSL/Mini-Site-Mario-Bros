@@ -1,0 +1,144 @@
+@media(max-width: 1220px){
+  body{
+    background-color: blue;
+  }
+
+  .fundo-video{
+    display: none;
+  }
+  
+  .cabecalho{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0.25em;
+  }
+
+  .container{
+    display: flex;
+    /* flex-wrap: wrap;  */
+    justify-content: center;
+    height: auto;
+    margin: auto;
+    /* width: auto; */
+    /* gap: 30px;  */
+  }
+
+
+  .container .mario-logo{
+    display: flex;
+    justify-content: left;
+    max-width: 90%;
+    padding: auto 0;
+    margin: auto;
+    margin-bottom: 1.5rem;
+  }
+
+  .container .animated-caption{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-top: 2rem; */
+  }
+
+  
+  .container .mario{
+    margin: 0;
+    margin-top: -8em;
+    display: block;
+    align-items: center;
+    justify-content: center; 
+    height: auto;
+  }
+
+  .container .img-mario{
+    display: flex;
+    max-width: 75%;
+    margin: auto;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    padding-bottom: 7vw;
+  }
+
+  .container .desc-mario{
+    display: inline;
+    /* margin: auto ;
+    padding: auto; */
+  
+  }
+  
+  .container .luigi{
+    display: block;
+    margin-top: 5dvw ;
+    padding: 0;
+  }
+
+  .container .desc-luigi{
+    display: inline;
+    margin: 0;
+    padding: auto;
+  }
+  .container .img-luigi{
+    display: flex;
+    margin: 2.5em;
+    padding: 0;
+    justify-content: center;
+    max-width: 85%;
+  }
+
+  .container .peach{
+    display: block;
+    margin: auto;
+  }
+
+  .container .img-peach{
+    max-width: 90%;
+    max-height: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .container .desc-peach{
+    display: contents;
+  }
+
+  .container .trailer{
+    display: contents;
+  }
+
+  .trailer .trailer-footer {
+    display: none;
+   
+  }
+
+  .container .img-mario-footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 70px 0px;
+    max-width: 80%;
+    /* max-height: 50%; */
+  }
+
+  .container .botao-trailer{
+    display: none;
+  }
+
+  .container .modal{
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .container footer{
+    /* margin: auto; */
+    /* padding: 0; */
+    width: 100vw;
+    height: 5vh;
+  }
+
+}
