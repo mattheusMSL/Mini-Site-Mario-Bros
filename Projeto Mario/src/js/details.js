@@ -1,8 +1,5 @@
-
 const imgMario = document.querySelectorAll('.img-mario');
- 
 window.addEventListener('scroll', animaScrollMario);
-
 function animaScrollMario(){
  const trigger = window.innerHeight / 5 * 5;
  imgMario.forEach(element => {
@@ -155,4 +152,57 @@ window.addEventListener('scroll', () => {
 });
 
 /*  ------------ Toad's description ------------  */
+
+
+const imgMarioFooter = document.querySelectorAll(".img-mario-footer");
+window.addEventListener("scroll", () =>{
+  const trigger = window.innerHeight / 5 * 4;
+  imgMarioFooter.forEach((element) =>{
+  const imgMarioFooterScroll = element.getBoundingClientRect().top;
+  if(imgMarioFooterScroll < trigger){
+    element.classList.add('animated-mario-footer');
+  }else{
+    element.classList.remove('animated-mario-footer');
+  }
+  });
+});
+
+/*  ------------ Mario's image footer ------------  */
+
+const trailerButton = document.querySelectorAll('.botao-trailer');
+window.addEventListener('scroll', () =>{
+  const trigger = window.innerHeight / 5 * 5;
+  trailerButton.forEach((element) => {
+    const trailerButtonScroll = element.getBoundingClientRect().top;
+    if(trailerButtonScroll < trigger){
+      element.classList.add('animated-button');
+    }else{
+      element.classList.remove('animated-button');
+    }
+  });
+});
+
+
+const botaoTrailer = document.querySelector(".botao-trailer");
+const botaoFecharModal = document.querySelector(".fechar-modal");
+const video = document.getElementById("video");
+const modal = document.querySelector(".modal");
+const linkDoVideo = video.src;
+
+function alternarModal(){
+	modal.classList.toggle("aberto");
+}
+
+botaoTrailer.addEventListener("click", () => {
+	// console.log("clicou no botão trailer");
+	alternarModal();
+	video.setAttribute("src", linkDoVideo);
+	// modal.classList.add("aberto");
+});
+
+ botaoFecharModal.addEventListener("click", () => {
+    // modal.classList.remove("aberto");
+ 	alternarModal();
+ 	video.setAttribute("src", "");
+ });
 
