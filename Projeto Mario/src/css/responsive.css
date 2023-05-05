@@ -121,6 +121,10 @@
     /* max-height: 50%; */
   }
 
+  .container .toad{
+    display: block;
+  }
+
   .container .botao-trailer{
     display: none;
   }
