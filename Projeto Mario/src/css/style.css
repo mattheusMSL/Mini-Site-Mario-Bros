@@ -1,6 +1,7 @@
 body{
     font-family: 'poppins';
     background-color: black;
+    
 }
 
 .cabecalho{
@@ -75,8 +76,6 @@ body{
     justify-content: center;
     
 }
-
-
 
 .mario{
     padding-top: 10em;
@@ -275,11 +274,11 @@ body{
 
  .modal{ 
     position: relative; /*fixed*/
-    width: 30vw;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    /* background-color: rgba(52, 52, 50, 0.749); */
+    background-color: rgba(52, 52, 50, 0.749);
     visibility: hidden;  
 }
 
@@ -406,6 +405,10 @@ footer{
    width: 100vw;
    height: 100vh;
    padding: 2rem;
+}
+
+.fundo-video{
+    position: absolute;
 }
 
 
