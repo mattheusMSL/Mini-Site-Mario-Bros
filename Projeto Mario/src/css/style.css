@@ -1,7 +1,10 @@
 body{
     font-family: 'poppins';
     background-color: black;
-    
+    /* overflow: hidden; */
+    overflow-x: hidden;
+   
+
 }
 
 .cabecalho{
@@ -43,6 +46,7 @@ body{
     height: calc(100vh - 138px);
     padding: 0 30px 30px;
     flex-direction: column;
+    
 }
 
 .container .mario-logo{
@@ -53,6 +57,8 @@ body{
 .container figure{
     display: flex;
     justify-content: center;
+    scroll-behavior: smooth;
+    scrollbar-color: dark;
 }
 
 .container figcaption{
@@ -339,7 +345,8 @@ body{
 .fundo-video .video{
     height: 100vh;
     /* justify-content:center ; */
-}
+    /* overflow: hidden;*/
+} 
 
 .fundo-video::after{
     content: "";
@@ -376,6 +383,7 @@ body{
 .trailer{
     color: #a8adb7;
     margin-top: 5rem;
+    
 }
 
 .img-mario-footer{
@@ -409,6 +417,7 @@ footer{
 
 .fundo-video{
     position: absolute;
+    
 }
 
 
