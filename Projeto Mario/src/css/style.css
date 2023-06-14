@@ -3,8 +3,7 @@ body{
     background-color: black;
     /* overflow: hidden; */
     overflow-x: hidden;
-   
-
+    box-sizing: border-box;
 }
 
 .cabecalho{
